@@ -1,5 +1,5 @@
 // const backendDomin = "http://localhost:8080"
-const backendDomin =  process.env.REACT_APP_BACKEND_URL//"http://localhost:8080"
+const backendDomin = process.env.REACT_APP_BACKEND_URL
 
 
 const SummaryApi = {
@@ -87,12 +87,12 @@ const SummaryApi = {
     getOrder : {
         url : `${backendDomin}/api/order-list`,
         method : 'get'
+    },
+    
+    allOrder : {
+        url : `${backendDomin}/api/all-order`,
+        method : 'get'
     }
-    // },
-    // allOrder : {
-    //     url : `${backendDomin}/api/all-order`,
-    //     method : 'get'
-    // }
 }
 
 
