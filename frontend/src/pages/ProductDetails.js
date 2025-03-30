@@ -202,7 +202,18 @@ const ProductDetails = () => {
                   <p className='text-red-600'>{displayINRCurrency(data.sellingPrice)}</p>
                   <p className='text-slate-400 line-through'>{displayINRCurrency(data.price)}</p>
                 </div>
-
+                <select 
+                  className='border-2 border-gray-600 rounded px-3 py-1 min-w-[120px] text-gray-600 font-medium'
+                  value={data.shoeSize} // Bind to shoe size state
+                  // onChange={(e) => setData({ ...data, shoeSize: e.target.value })} // Update shoe size state
+                >
+                  <option value="">Select Shoe Size</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
                 <div className='flex items-center gap-3 my-2'>
                   <button className='border-2 border-red-600 rounded px-3 py-1 min-w-[120px] text-red-600 font-medium hover:bg-red-600 hover:text-white' onClick={(e)=>handleBuyProduct(e,data?._id)}>Buy</button>
                   <button className='border-2 border-red-600 rounded px-3 py-1 min-w-[120px] font-medium text-white bg-red-600 hover:text-red-600 hover:bg-white' onClick={(e)=>handleAddToCart(e,data?._id)}>Add To Cart</button>
