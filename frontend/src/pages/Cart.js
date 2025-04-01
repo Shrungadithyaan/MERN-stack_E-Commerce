@@ -206,6 +206,51 @@ const Cart = () => {
                             </div>
                             ) : (
                                 <div className='h-36 bg-white'>
+                                       <h2 className='text-lg font-medium mb-3'>Shipping Address</h2>
+              <div className='space-y-3'>
+                <div>
+                  <label className='block text-sm font-medium text-gray-700'>Address</label>
+                  <input
+                    type='text'
+                    name='address'
+                    
+                    className='w-full p-2 border rounded'
+                    placeholder='Enter your address'
+                  />
+                </div>
+                <div>
+                  <label className='block text-sm font-medium text-gray-700'>City</label>
+                  <input
+                    type='text'
+                    name='city'
+                    
+                    className='w-full p-2 border rounded'
+                    placeholder='Enter your city'
+                  />
+                </div>
+                <div>
+                  <label className='block text-sm font-medium text-gray-700'>Pincode</label>
+                  <input
+                    type='number'
+                    name='pincode'
+                   
+                    className='w-full p-2 border rounded'
+                    placeholder='Enter pincode'
+                  />
+                </div>
+                <div>
+                  <label className='block text-sm font-medium text-gray-700'>Phone Number</label>
+                  <input
+                    type='number'
+                    name='phoneNumber'
+               
+                    className='w-full p-2 border rounded'
+                    placeholder='Enter phone number'
+                  />
+                </div>
+              </div>
+              
+              <br></br>
                                     <h2 className='text-white bg-red-600 px-4 py-1'>Summary</h2>
                                     <div className='flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600'>
                                         <p>Quantity</p>
